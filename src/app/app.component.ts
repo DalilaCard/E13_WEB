@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { InterpolacionComponent } from './interpolacion/interpolacion.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true, // Si tu proyecto usa standalone
+  imports: [InterpolacionComponent], // Asegúrate de incluir tu componente aquí
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ejercicio13';
+  title = 'Ejercicio 13';
 }
